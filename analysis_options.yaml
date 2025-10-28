@@ -1,0 +1,21 @@
+# Flutter linter configuration
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  # Enable custom lint plugins (like riverpod_lint)
+  plugins:
+    - custom_lint
+
+linter:
+  rules:
+    # Use const constructors when possible for better performance
+    prefer_const_constructors: true
+    
+    # Use const for immutable lists and maps
+    prefer_const_literals_to_create_immutables: true
+    
+    # Avoid using print() in production code
+    avoid_print: true
+    
+    # Use single quotes for strings
+    prefer_single_quotes: true

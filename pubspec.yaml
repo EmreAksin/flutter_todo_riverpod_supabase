@@ -1,0 +1,59 @@
+name: todo_to_do
+description: "A Flutter todo app with Supabase backend and Clean Architecture"
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.2
+
+# Main dependencies (required for app to run)
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Localization support for Turkish date/time formats
+  flutter_localizations:
+    sdk: flutter
+  
+  # State management with Riverpod
+  flutter_riverpod: ^3.0.3
+  hooks_riverpod: ^3.0.3
+  flutter_hooks: ^0.21.3+1
+  riverpod_annotation: ^3.0.3
+  
+  # Backend - Supabase (database + auth + realtime)
+  supabase_flutter: ^2.10.3
+  
+  # Routing - URL-based navigation
+  go_router: ^16.3.0
+  
+  # Code generation annotations
+  freezed_annotation: ^3.1.0
+  json_annotation: ^4.9.0
+  
+  # Internationalization and date formatting
+  intl: ^0.20.2
+
+# Development dependencies (not included in final app)
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  
+  # Code quality and linting
+  flutter_lints: ^6.0.0
+  riverpod_lint: ^3.0.3
+  custom_lint: ^0.8.0
+  
+  # Code generation tools
+  build_runner: ^2.6.1
+  riverpod_generator: ^3.0.3
+  freezed: ^3.2.3
+  json_serializable: ^6.8.0
+  
+  # Testing - mock objects
+  mocktail: ^1.0.4
+
+flutter:
+  uses-material-design: true

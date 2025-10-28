@@ -1,0 +1,12 @@
+# Build configuration for code generation
+targets:
+  $default:
+    builders:
+      # Riverpod generator settings
+      riverpod_generator:
+        options:
+          # No prefix for provider names (e.g., userProvider)
+          provider_name_prefix: ""
+          
+          # No prefix for family provider names
+          provider_family_name_prefix: ""
